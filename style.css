@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+/* CONTENU */
+
+main {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* SECTIONS */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+
+/* TITRES */
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+
+/* FORMULAIRE */
+
+.formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.formulaire h2 {
+    width: 100%;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162d6b;
+}
+
+
+/* TABLEAU */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+td {
+    height: 90px;
+    min-width: 120px;
+}
+
+
+/* CASES DES COURS */
+
+td.cours {
+    background-color: #dbeafe;
+}
+
+td.td {
+    background-color: #dcfce7;
+}
+
+td.tp {
+    background-color: #fef3c7;
+}
+
+
+/* BOUTON SUPPRIMER */
+
+td button {
+    margin-top: 8px;
+    padding: 5px 8px;
+    background-color: #dc2626;
+}
+
+td button:hover {
+    background-color: #991b1b;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* TELEPHONE */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 98%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .formulaire {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    .formulaire button {
+        width: 100%;
+    }
+
+}
+
+.photo-profil {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.profil {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    text-align: center;
+}
+
+.profil .photo-profil {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profil h3 {
+    color: white;
+    margin-top: 5px;
+}
+
+.profil p {
+    color: white;
+    font-size: 12px;
+    margin-top: 3px;
+}

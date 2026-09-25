@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon Organisateur L2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="photo/photo.png" class="photo-profil">
+        <h3>TCHOU OUMAR</h3>
+        <h1>📚L2 Reseaux & telecom</h1>
+        <p>Mes cours, TD, TP et emploi du temps</p>
+    </header>
+
+    <main>
+
+        <!-- AJOUTER UN COURS -->
+        <section class="formulaire">
+
+            <h2>Ajouter un cours</h2>
+
+            <input type="text" id="matiere" placeholder="Nom de la matière">
+
+            <select id="jour">
+                <option value="">Choisir le jour</option>
+                <option value="Lundi">Lundi</option>
+                <option value="Mardi">Mardi</option>
+                <option value="Mercredi">Mercredi</option>
+                <option value="Jeudi">Jeudi</option>
+                <option value="Vendredi">Vendredi</option>
+                <option value="Samedi">Samedi</option>
+            </select>
+
+            <select id="heure">
+                <option value="">Choisir l'heure</option>
+                <option value="08:00">08:00</option>
+                <option value="10:00">10:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <input type="text" id="salle" placeholder="Salle">
+
+            <select id="type">
+                <option value="">Choisir le type</option>
+                <option value="Cours">Cours</option>
+                <option value="TD">TD</option>
+                <option value="TP">TP</option>
+            </select>
+
+            <button onclick="ajouterEmploi()">
+                Ajouter
+            </button>
+
+        </section>
+
+
+        <!-- EMPLOI DU TEMPS -->
+        <section>
+
+            <h2>📅 Mon emploi du temps</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Lundi</th>
+                            <th>Mardi</th>
+                            <th>Mercredi</th>
+                            <th>Jeudi</th>
+                            <th>Vendredi</th>
+                            <th>Samedi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>08:00</td>
+
+                            <td data-jour="Lundi" data-heure="08:00"></td>
+                            <td data-jour="Mardi" data-heure="08:00"></td>
+                            <td data-jour="Mercredi" data-heure="08:00"></td>
+                            <td data-jour="Jeudi" data-heure="08:00"></td>
+                            <td data-jour="Vendredi" data-heure="08:00"></td>
+                            <td data-jour="Samedi" data-heure="08:00"></td>
+                        </tr>
+
+                        <tr>
+                            <td>10:00</td>
+
+                            <td data-jour="Lundi" data-heure="10:00"></td>
+                            <td data-jour="Mardi" data-heure="10:00"></td>
+                            <td data-jour="Mercredi" data-heure="10:00"></td>
+                            <td data-jour="Jeudi" data-heure="10:00"></td>
+                            <td data-jour="Vendredi" data-heure="10:00"></td>
+                            <td data-jour="Samedi" data-heure="10:00"></td>
+                        </tr>
+
+                        <tr>
+                            <td>12:00</td>
+
+                            <td data-jour="Lundi" data-heure="12:00"></td>
+                            <td data-jour="Mardi" data-heure="12:00"></td>
+                            <td data-jour="Mercredi" data-heure="12:00"></td>
+                            <td data-jour="Jeudi" data-heure="12:00"></td>
+                            <td data-jour="Vendredi" data-heure="12:00"></td>
+                            <td data-jour="Samedi" data-heure="12:00"></td>
+                        </tr>
+
+                        <tr>
+                            <td>14:00</td>
+
+                            <td data-jour="Lundi" data-heure="14:00"></td>
+                            <td data-jour="Mardi" data-heure="14:00"></td>
+                            <td data-jour="Mercredi" data-heure="14:00"></td>
+                            <td data-jour="Jeudi" data-heure="14:00"></td>
+                            <td data-jour="Vendredi" data-heure="14:00"></td>
+                            <td data-jour="Samedi" data-heure="14:00"></td>
+                        </tr>
+
+                        <tr>
+                            <td>16:00</td>
+
+                            <td data-jour="Lundi" data-heure="16:00"></td>
+                            <td data-jour="Mardi" data-heure="16:00"></td>
+                            <td data-jour="Mercredi" data-heure="16:00"></td>
+                            <td data-jour="Jeudi" data-heure="16:00"></td>
+                            <td data-jour="Vendredi" data-heure="16:00"></td>
+                            <td data-jour="Samedi" data-heure="16:00"></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 - Mon Organisateur L2</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
